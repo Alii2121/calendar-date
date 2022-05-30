@@ -24,7 +24,7 @@ pipeline {
       echo "Workspace is $WORKSPACE"
               dir("$WORKSPACE") {
               script {
-                  docker.withRegistry('https://index.docker.io/v1/', 'dockerhub4') {
+                  docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') {
                       def image = docker.build('alimarawan2121/cal-date:latest')
                       image.push()
                   }
