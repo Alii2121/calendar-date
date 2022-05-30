@@ -13,7 +13,7 @@ pipeline {
      stage('Build docker image'){
      steps{
          
-         sh(script: '''
+         bat(script: '''
          docker build first-cal .
          ''')
 
