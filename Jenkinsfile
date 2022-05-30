@@ -14,7 +14,7 @@ pipeline {
      steps{
          
          bat(script: '''
-         docker build first-cal .
+         docker build calendar-date .
          ''')
 
      }
